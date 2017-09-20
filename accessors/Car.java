@@ -14,9 +14,8 @@ public class Car {
 	public String getPlateNr() {
 		return this.plateNr;
 	}
-
 	
-	 public int getSpeed () {
+	public int getSpeed () {
 		return this.currentSpeed;
 	}
 
