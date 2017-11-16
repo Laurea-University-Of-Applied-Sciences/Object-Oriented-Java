@@ -1,3 +1,4 @@
+// Source code for DynamicArrays workshop exercises
 package DynamicArrays;
 import java.util.ArrayList;  // 2. You need to import this required package
 
