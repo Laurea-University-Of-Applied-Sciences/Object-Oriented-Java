@@ -64,7 +64,6 @@ public class Accessors {
 	/***************************************************
 	 * CAR2 STUFF HERE!!
 	 * Code for creating a car2 based on the user's input.
-	 * @param inputReader
 	 * @return Car2
 	 */
 	private static Car2 createCar2(){
