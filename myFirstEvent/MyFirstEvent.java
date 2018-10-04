@@ -9,12 +9,13 @@ import java.awt.Font;
 
 // Change the name of this class to the name of your program
 public class MyFirstEvent extends JFrame {
-	/* I can not declare the following components as local variables in the constructor MyFirstEvent()
-	 * because I will need to access them in the event handling method of MyEventHandler Class 
+	/* The following components can not be declared as local variables in the constructor MyFirstEvent()
+	 * because they will need to be accessed from within the actionPerfomred method. These are therefore
+	 * declared as static variables 
 	 */
-	JLabel lblSay = new JLabel("");
-	JButton btnYes = new JButton ("Say \"Yes\"");
-	JButton btnSaySomething = new JButton("Say something...");
+	static JLabel lblSay = new JLabel("");
+	static JButton btnYes = new JButton ("Say \"Yes\"");
+	static JButton btnSaySomething = new JButton("Say something...");
 	
 	// This is the Class Constructor method. It has the same name as the Class name 
 	public MyFirstEvent (){
