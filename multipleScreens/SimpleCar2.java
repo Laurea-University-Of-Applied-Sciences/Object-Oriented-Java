@@ -1,7 +1,6 @@
 // This file shows a possible solution for the hands-on exercise given in the contact session
 package multipleScreens;
 public class SimpleCar2 {
-	
 	String model;
 	String colour;
 	String plateNr;

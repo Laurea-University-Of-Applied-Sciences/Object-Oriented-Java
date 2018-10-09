@@ -1,6 +1,5 @@
 package multipleScreens;
 public class SimpleCar {
-	
 	String model;
 	String colour;
 	String plateNr;

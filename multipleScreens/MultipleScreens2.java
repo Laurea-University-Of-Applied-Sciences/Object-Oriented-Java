@@ -55,7 +55,7 @@ public class MultipleScreens2 extends JFrame {
 		btnAddCar.addActionListener(commandHandler);
 	}
 
-	private void populateTable(){
+	private static void populateTable(){
 		for (int row=0; row<dbItems; row++){
 			tableCar.setValueAt(myDB[row].plateNr, row, 0);  
 			tableCar.setValueAt(myDB[row].colour, row, 1);  
@@ -64,7 +64,7 @@ public class MultipleScreens2 extends JFrame {
 		}
 	}
 	
-	private void initiateCarCollection(){
+	private static void initiateCarCollection(){
 		myDB[0] = new SimpleCar2("HGF-234", "Green", "Toyota", "1991"); // Code changed here
 		myDB[1] = new SimpleCar2("YSL-409", "Black", "Renault", "1974"); // Code changed here
 		dbItems = 2;
@@ -87,7 +87,7 @@ public class MultipleScreens2 extends JFrame {
 		}
 	}
 	
-	private void getNewCarFromUser(){
+	private static void getNewCarFromUser(){
 		JTextField plateNrField = new JTextField(10);
 	    JTextField colourField = new JTextField(10);
 	    JTextField modelField = new JTextField(10);
