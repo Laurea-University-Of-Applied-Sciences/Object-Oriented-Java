@@ -4,9 +4,6 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JButton;
 import javax.swing.JLabel;
-import javax.swing.JList;
-import javax.swing.ListSelectionModel;
-import javax.swing.AbstractListModel;
 import javax.swing.JComboBox;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JMenuBar;
@@ -31,17 +28,19 @@ public class Painting {
 		menuBar.add(mnMenu);
 		
 		JMenuItem mntmAbout = new JMenuItem("Exit");
+		
+		// Event handler for the "Exit" menu
 		mntmAbout.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				System.exit(0);
+				System.exit(0); // Terminate the application
 			}
 		});
+		
 		mnMenu.add(mntmAbout);
 	
 		JPanel paintingPanel = new JPanel();
 		paintingPanel.setBounds(121, 35, 101, 98);
 		myFrame.getContentPane().add(paintingPanel);
-		
 		
 		JLabel lblSelectColor = new JLabel("Select color:");
 		lblSelectColor.setBounds(10, 35, 133, 14);
@@ -53,6 +52,8 @@ public class Painting {
 		myFrame.getContentPane().add(color);
 		
 		JButton btnNewButton = new JButton("Paint!");
+
+		// Event handler for the "Paint!" button
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				if (color.getSelectedItem().equals("Red")) {
