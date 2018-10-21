@@ -74,7 +74,7 @@ public class Painting {
 		btnNewButton.setBounds(10, 110, 89, 23);
 		myFrame.getContentPane().add(btnNewButton);
 	
-		myFrame.setBounds(0,0,249,183);
+		myFrame.setBounds(0,0,276,205);
 		myFrame.setLocationRelativeTo(null);  
 		myFrame.setVisible(true);
 	}
