@@ -90,7 +90,7 @@ public class StudentGUI extends JFrame {
 		getContentPane().add(btnCreateStudent);
 		
 		// A button to make the student say hello
-		JButton btnSayHello = new JButton("Say hello!");
+		JButton btnSayHello = new JButton("Greet!");
 		btnSayHello.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				// When "Say hello" button is clicked a message box (JOptionPane.showMessageDialog()) greets in their respective language.
