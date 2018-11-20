@@ -14,7 +14,7 @@ public class ErrorHandlingGraceful {
 		
 		System.out.println("Select one of the options below to test different exceptions:");
 		System.out.println("1 – Arithmetic exception");
-		System.out.println("2 – Array out of bound");
+		System.out.println("2 – Index out of bounds");
 		System.out.println("3 – Input mismatch");
 		System.out.println("4 – SQL Exception");
 		System.out.println("\nType your option (1-4):");
@@ -58,7 +58,6 @@ public class ErrorHandlingGraceful {
 			}
 			case 4:
 			{
-				// In this case we MUST have the try/catch block because DriverManager.getConnection() explicitly thorws an exception
 				try{
 					Connection someDb = DriverManager.getConnection("jdbc:mysql://localhost:3306/someDb", "root", "");
 				}

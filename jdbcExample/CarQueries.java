@@ -12,8 +12,16 @@ import java.util.ArrayList;
  * Don't worry yet about the try/catch/finally blocks in some methods. This will be explained later in the course 
  */
 public class CarQueries {
-	// DB connection details
-	private static final String URL = "jdbc:mysql://localhost:3306/jdbcexample";
+	// DB connection details	
+	/* In case you will use the MySQL server on MS Azure
+	private static final String URL = "jdbc:mysql://mysql-antonius.mysql.database.azure.com:3306/student50";
+	private static final String USERNAME = "student50@mysql-antonius";
+	private static final String PASSWORD = "laureauas12345"; //default password for all students
+	*/
+
+	// DB connection details		
+	/* Local MySQL server*/
+	private static final String URL = "jdbc:mysql://localhost:3306/dbname";
 	private static final String USERNAME = "root";
 	private static final String PASSWORD = "";
 
@@ -27,7 +35,7 @@ public class CarQueries {
 		{
 			connection = DriverManager.getConnection(URL, USERNAME, PASSWORD); // Starts a connection to the database
 			selectAllCars = connection.prepareStatement("SELECT * FROM cars"); // Prepare the select query that gets all cars from the database
-			// Here you will need to prepare the insert query
+			// **** Add here the line of code to prepare the INSERT query *****
 		}
 		catch (SQLException sqlException)
 		{

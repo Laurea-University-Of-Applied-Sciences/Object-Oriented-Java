@@ -41,14 +41,14 @@ public class JdbcExample extends JFrame {
 		tableCar = new JTable();
 		tableCar.setRowSelectionAllowed(false);
 		tableCar.setModel(new DefaultTableModel(
-			new Object[MAX_QTY][4],  // Code changed here
-			new String[] {"Plate Number", "Colour", "Model", "Model Year"} // Code changed here
+			new Object[MAX_QTY][4],
+			new String[] {"Plate Number", "Colour", "Model", "Model Year"}
 		));
-		tableCar.setBounds(10, 36, 240, 100); // Code changed here
+		tableCar.setBounds(10, 36, 240, 100);
 		getContentPane().add(tableCar);
 		
 		btnAddCar = new JButton("Add Car");
-		btnAddCar.setBounds(270, 36, 89, 23); // Code changed here
+		btnAddCar.setBounds(270, 36, 89, 23);
 		getContentPane().add(btnAddCar);
 		
 		populateTable();
